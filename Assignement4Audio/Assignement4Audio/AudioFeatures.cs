@@ -12,12 +12,11 @@ namespace Assignement4Audio
 {
     class AudioFeatures
     {
-        private string[] pathToAudio;
+        private string[] audioFileName;
 
         public void SetDirectoryPaths(string folderPath)
         {
-            pathToAudio = Directory.GetFiles(folderPath.TrimEnd(Path.DirectorySeparatorChar), "*.wav").OrderBy(r => r.Length).ToArray();
-            WaveDecoder WavDec;
+            audioFileName = Directory.GetFiles(folderPath, "*.wav").Select(Path.GetFileName).ToArray();
         }
     }
 }
