@@ -23,7 +23,8 @@ namespace Assignement4Audio
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 this.textBox1.Text = folderBrowserDialog1.SelectedPath;
-                AF.SetDirectoryPaths(textBox1.Text);
+                //AF.SetDirectoryPaths(textBox1.Text);
+                AF.waveInput();
             }
         }
     }
