@@ -43,16 +43,8 @@ namespace Assignement4Audio
             {
                 string type;
                 string name;
-                if (audioFileName[i].Contains("mu"))
-                {
-                    type = "MUSIC";
-                    name = Path.GetFileName(audioFileName[i]);
-                }
-                else
-                {
-                    type = "SPEECH";
-                    name = Path.GetFileName(audioFileName[i]);
-                }
+                setTypeAndName(audioFileName[i], out type, out name);
+                
 
                 Accord.Audio.Formats.WaveDecoder currentWav = new Accord.Audio.Formats.WaveDecoder(audioFileName[i]);
                 //Used for time Domain
@@ -91,6 +83,21 @@ namespace Assignement4Audio
 
                 //Writes data to arff file
                 writeARFF(name, averageEnergy, zeroCrossingRate, spectralCentroid, type);
+            }
+        }
+
+        // get the type and name of the file
+        private void setTypeAndName(string audioFileName, out string type, out string name)
+        {
+            if (audioFileName.Contains("mu"))
+            {
+                type = "MUSIC";
+                name = Path.GetFileName(audioFileName);
+            }
+            else
+            {
+                type = "SPEECH";
+                name = Path.GetFileName(audioFileName);
             }
         }
 

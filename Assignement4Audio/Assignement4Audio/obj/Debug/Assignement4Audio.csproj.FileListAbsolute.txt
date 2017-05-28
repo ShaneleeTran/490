@@ -58,3 +58,6 @@ C:\Users\JJ\Documents\GitHub\490\Assignement4Audio\Assignement4Audio\obj\Debug\A
 C:\Users\JJ\Documents\GitHub\490\Assignement4Audio\Assignement4Audio\obj\Debug\Assignement4Audio.Form1.resources
 C:\Users\JJ\Documents\GitHub\490\Assignement4Audio\Assignement4Audio\obj\Debug\Assignement4Audio.Properties.Resources.resources
 C:\Users\JJ\Documents\GitHub\490\Assignement4Audio\Assignement4Audio\obj\Debug\Assignement4Audio.csproj.GenerateResource.Cache
+C:\Users\Shanelee\GitHub\490\Assignement4Audio\Assignement4Audio\bin\Debug\Assignement4Audio.exe.config
+C:\Users\Shanelee\GitHub\490\Assignement4Audio\Assignement4Audio\obj\Debug\Assignement4Audio.exe
+C:\Users\Shanelee\GitHub\490\Assignement4Audio\Assignement4Audio\obj\Debug\Assignement4Audio.pdb
