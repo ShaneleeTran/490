@@ -35,7 +35,7 @@ namespace Assignement4Audio
         //        //complex.ForwardFourierTransform();
         //    }
         //}
-
+        
         public void waveInput()
         {
             writeHeaderForARFF();
